@@ -17,7 +17,7 @@ def select_top(data_list, value):#valueには上位〇%の〇を入れる
 
 #二つのデータセットからK-S検定で異なると判断された変数の番号とP値が格納された辞書を返す。
 def KS_test(data_01, data_02):
-  data_num = data_01[0].shape[1]
+  data_num = len(data_01[0])
   num_different_parameters = 0
   different_latent_dic = {}
   
