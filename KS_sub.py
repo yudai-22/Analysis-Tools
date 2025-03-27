@@ -22,7 +22,7 @@ def KS_test(data_01, data_02):
   different_latent_dic = {}
   
   for i in range(data_num): 
-      ks_statistic, p_value = stats.ks_2samp(data_set_1[:, i], data_set_2[:, i])
+      ks_statistic, p_value = stats.ks_2samp(data_01[:, i], data_02[:, i])
       alpha = 0.01  # 有意水準
       if p_value < alpha:
           num_different_parameters += 1
