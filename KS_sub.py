@@ -1,4 +1,6 @@
 import numpy as np
+from scipy import stats
+
 
 def select_top(data_list, value):#valueには上位〇%の〇を入れる
   sums = np.array([np.sum(arr) for arr in data_list])
